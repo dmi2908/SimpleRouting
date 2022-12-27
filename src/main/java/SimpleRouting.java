@@ -4,10 +4,14 @@ import java.util.Scanner;
 public class SimpleRouting {
     private static String result = "";
     private static HashMap<String, Integer> townCounterMap = new HashMap<>();
-    public static void main(String[] args) {
-        buildRoute();
-        // выводим результат обработки
-        System.out.println(result);
+    public static void main(String[] args) throws Exception{
+        try {
+            buildRoute();
+            // выводим результат обработки
+            System.out.println(result);
+        } catch(Exception e) {
+            System.out.println(e.getMessage());
+        }
     }
 
     private static void buildRoute() {
