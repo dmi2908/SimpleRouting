@@ -1,10 +1,9 @@
 import java.util.HashMap;
-import java.util.Map;
 import java.util.Scanner;
 
 public class SimpleRouting {
     private static String result = "";
-    private static Map<String, Integer> townCounterMap = new HashMap<>();
+    private static HashMap<String, Integer> townCounterMap = new HashMap<>();
     public static void main(String[] args) {
         buildRoute();
         // выводим результат обработки
